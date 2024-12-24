@@ -1,0 +1,26 @@
+.text_color {
+  color: #901d63;
+}
+
+.bg_primary {
+  background-color: #901d63;
+}
+
+.margin-top {
+  margin-top: 5rem;
+}
+
+.hero-image {
+  margin-bottom: -4rem;
+  margin-right: -2rem;
+  transform: translateY(-10%);
+  width: 100%;
+  max-width: 25rem;
+  height: auto;
+}
+
+.booking-area {
+  margin-top: -3rem;
+  position: relative;
+  z-index: 111;
+}

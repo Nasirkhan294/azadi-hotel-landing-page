@@ -1,2 +1,2 @@
-# azadi-hotel-landing-page
-A sleek, responsive landing page for Parsian Azadi Hotel, highlighting luxury, comfort, and easy booking options. Perfect for showcasing web design with Bootstrap 5.
+# Parsian Azadi Hotel Landing Page
+A modern and elegant landing page for Parsian Azadi Hotel, showcasing its luxurious accommodations and premium services. Designed with responsiveness and user experience in mind, the page highlights the hotel's amenities, booking options, and unique appeal as a top choice for distinguished travelers. Perfect for demonstrating web design skills with Bootstrap 5 and custom styling.
