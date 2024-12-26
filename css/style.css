@@ -2,12 +2,16 @@
   color: #901d63;
 }
 
+.border-active {
+  border: 1px solid #901d63;
+}
+
 .bg_primary {
   background-color: #901d63;
 }
 
-.margin-top {
-  margin-top: 5rem;
+.input_bg {
+  background-color: #f6e9ee;
 }
 
 .hero-image {
@@ -19,8 +23,125 @@
   height: auto;
 }
 
+.service-image {
+  margin-bottom: -1.4rem;
+  margin-left: -2rem;
+  max-height: 300px;
+}
+
 .booking-area {
   margin-top: -3rem;
   position: relative;
   z-index: 111;
+}
+
+.service-image {
+    margin-bottom: -5.1rem;
+    margin-left: -2.2rem;
+    transform: translateY(-13%);
+    max-height: 400px;
+}
+
+.md-button {
+    transform: translateX(-58%);
+}
+
+@media (max-width: 1024px) {
+  .md-button {
+    transform: translateX(-19%);
+  }
+
+  .service-image {
+    max-height: 300px;
+    margin-bottom: -3.8rem;
+    margin-left: -1.9rem;
+  }
+
+  .md-p {
+    font-size: 0.8rem;
+  }
+
+  .md-header {
+    font-size: 1.2rem;
+  }
+
+  .lg-header {
+    font-size: 1.6rem;
+  }
+
+  .md-img {
+    max-width: 0.9rem;
+    max-height: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-image {
+    margin-bottom: -3.6rem;
+    transform: translateY(-12%);
+    max-height: 300px;
+  }
+
+  .md-width {
+    margin: auto !important;
+    max-width: 42rem;
+  }
+
+  .md-button {
+    transform: translateX(-58%);
+  }
+}
+
+@media (max-width: 425px) {
+  .service-image {
+    margin-bottom: -3.6rem;
+    margin-left: -1.9rem;
+    transform: translateY(-15%);
+
+  }
+}
+
+@media (max-width: 375px) {
+  .service-image {
+    margin-bottom: -3.6rem;
+    margin-left: -1.9rem;
+    transform: translateY(-15%);
+  }
+
+  .hero-image {
+    margin-bottom: -3.2rem;
+    margin-right: -1.7rem;
+  }
+
+  .sm-header {
+    font-size: 1rem;
+  }
+
+  .sm-p {
+    font-size: 0.8rem;
+  }
+
+  .sm-img {
+    max-width: 0.8rem;
+    max-height: 0.8rem;
+  }
+
+  .md-button {
+    transform: translateX(-18%);
+  }
+
+  .sm-padding {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-image {
+    margin-bottom: -2.9rem;
+    margin-right: -1.6rem;
+  }
+
+  .sm-padding {
+    padding: 0.25rem;
+  }
 }
