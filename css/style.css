@@ -36,15 +36,32 @@
 }
 
 .service-image {
-    margin-bottom: -5.1rem;
-    margin-left: -2.2rem;
-    transform: translateY(-13%);
-    max-height: 400px;
+  margin-bottom: -5.1rem;
+  margin-left: -2.2rem;
+  transform: translateY(-13%);
+  max-height: 400px;
 }
 
 .md-button {
-    transform: translateX(-58%);
+  transform: translateX(-58%);
 }
+
+.form-control {
+  border: none;
+}
+
+.carousel-indicators {
+  bottom: -3rem !important;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #901d63 !important;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+}
+
 
 @media (max-width: 1024px) {
   .md-button {
@@ -97,7 +114,6 @@
     margin-bottom: -3.6rem;
     margin-left: -1.9rem;
     transform: translateY(-15%);
-
   }
 }
 
