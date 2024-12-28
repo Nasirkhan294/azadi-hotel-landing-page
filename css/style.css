@@ -6,6 +6,11 @@
   border: 1px solid #901d63;
 }
 
+.border-radius {
+  border-end-start-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
 .bg_primary {
   background-color: #901d63;
 }
@@ -77,6 +82,17 @@
   margin-left: 0.5rem;
 }
 
+.pagination-container {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.pagination {
+  display: inline-flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
 @media (max-width: 1024px) {
   .md-button {
     transform: translateX(-19%);
@@ -128,6 +144,12 @@
 
   .carousel-control-prev {
     right: 0;
+  }
+
+  .border-radius {
+    border-end-start-radius: 0;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
   }
 }
 
