@@ -16,7 +16,7 @@
 
 .hero-image {
   margin-bottom: -4rem;
-  margin-right: -2rem;
+  margin-right: -1.9rem;
   transform: translateY(-10%);
   width: 100%;
   max-width: 25rem;
@@ -62,6 +62,13 @@
   border: none;
 }
 
+.carousel-control-next {
+  left: -7rem;
+}
+
+.carousel-control-prev {
+  right: -7rem;
+}
 
 .quote-img {
   width: 72px;
@@ -114,13 +121,30 @@
   .md-button {
     transform: translateX(-58%);
   }
+
+  .carousel-control-next {
+    left: 0;
+  }
+
+  .carousel-control-prev {
+    right: 0;
+  }
 }
 
 @media (max-width: 425px) {
+  .hero-image {
+    margin-bottom: -3.9rem;
+    margin-right: -1.8rem;
+  }
+
   .service-image {
     margin-bottom: -3.6rem;
     margin-left: -1.9rem;
     transform: translateY(-15%);
+  }
+
+  .sm-padding {
+    padding: 0.8rem;
   }
 }
 
@@ -152,16 +176,12 @@
   .md-button {
     transform: translateX(-18%);
   }
-
-  .sm-padding {
-    padding: 0.8rem;
-  }
 }
 
 @media (max-width: 320px) {
   .hero-image {
-    margin-bottom: -2.9rem;
-    margin-right: -1.6rem;
+    margin-bottom: -2.8rem;
+    margin-right: -1.55rem;
   }
 
   .sm-padding {
