@@ -20,8 +20,6 @@ const pageData = [
 		facilities: [
 			"یخچال مینی‌بار",
 			"تلویزیون هوشمند",
-			"پرده‌های کنترلی",
-			"تهویههوااتوماتیک",
 			"کمد دیواری",
 			"اینترنت بی‌سیم",
 			"مبلمان راحتی",
@@ -36,13 +34,10 @@ const pageData = [
 			"یخچال مینی‌بار",
 			"تلویزیون هوشمند",
 			"پرده‌های کنترلی",
-			"تهویههوااتوماتیک",
-			"کمد دیواری",
 			"اینترنت بی‌سیم",
 			"مبلمان راحتی",
-			"صندوق امانات",
 		],
-		additionalInfo: ["مساحت اتاق : ۲۷ متر", "مناسب برای ۱ تا ۲ نفر", "سرویس روزانه اتاق"],
+		additionalInfo: ["مساحت اتاق : ۲۷ متر", "سرویس روزانه اتاق"],
 		images: ["assets/img-slider_1.png", "assets/img_slider_2.png"],
 	},
 	{
@@ -64,7 +59,6 @@ const pageData = [
 		title: "سوئیت پرزندیتال",
 		facilities: [
 			"یخچال مینی‌بار",
-			"تلویزیون هوشمند",
 			"پرده‌های کنترلی",
 			"تهویههوااتوماتیک",
 			"کمد دیواری",
@@ -72,10 +66,10 @@ const pageData = [
 			"مبلمان راحتی",
 			"صندوق امانات",
 		],
-		additionalInfo: ["مساحت اتاق : ۲۷ متر", "مناسب برای ۱ تا ۲ نفر", "سرویس روزانه اتاق"],
+		additionalInfo: ["مناسب برای ۱ تا ۲ نفر", "سرویس روزانه اتاق"],
 		images: ["assets/img-slider_1.png", "assets/img_slider_2.png"],
 	},
-	
+
 ];
 
 // Function to change the displayed content
@@ -90,7 +84,7 @@ function changePage(dataIndex) {
     <div class="card mb-4 rounded-4">
       <div class="card-body p-0 d-flex flex-column flex-lg-row align-items-center">
         <!-- Carousel Section -->
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-12">
           <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               ${data.images
@@ -115,7 +109,7 @@ function changePage(dataIndex) {
         </div>
 
         <!-- Room Details Section -->
-        <div class="col-lg-8 mt-3 mt-lg-0 p-2 p-lg-0 px-lg-4">
+        <div class="col-lg-8 col-md-12 mt-3 mt-lg-0 p-2 p-lg-0 px-lg-4">
           <h3 class="text_color my-2">${data.title}</h3>
           <hr />
           <div class="row">
@@ -157,7 +151,14 @@ function changePage(dataIndex) {
   `;
 }
 
-// Attach events to pagination buttons
-document.querySelectorAll(".page-item button").forEach((button, index) => {
-	button.addEventListener("click", () => changePage(index));
+// Attach pages to pagination buttons
+const buttons = document.querySelectorAll(".page-item button");
+
+buttons.forEach((button, index) => {
+	button.addEventListener("click", () => {
+		buttons.forEach(btn => btn.classList.remove("active"));
+
+		button.classList.add('active');
+		changePage(index)
+	});
 });

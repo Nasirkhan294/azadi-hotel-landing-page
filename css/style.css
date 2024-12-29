@@ -2,10 +2,6 @@
   color: #901d63;
 }
 
-.border-active {
-  border: 1px solid #901d63;
-}
-
 .border-radius {
   border-end-start-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -92,6 +88,23 @@
   justify-content: center;
   margin-bottom: 0;
 }
+
+.page-link {
+  color: #212529;
+}
+
+.page-link:hover {
+  color: #901d63;
+  border-color: #901d63 !important;
+}
+
+.page-link.active {
+  border: 1px solid #901d63 !important;
+  background-color: #fff;
+  color: #901d63;
+  box-shadow: none;
+}
+
 
 @media (max-width: 1024px) {
   .md-button {
